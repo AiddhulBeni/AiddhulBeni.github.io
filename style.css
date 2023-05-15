@@ -87,17 +87,11 @@
     position: relative;
 }
 
-.content-image {
-    position: relative;
-    top: 200px;
-    right: 50px;
-}
-
 .content-image img {
-    top: 200px;
-    right: 40px; 
+    margin-top: 75px;
     padding: 15px;
     border-radius: 50px;
+    width: 450px;
 }
 /* style about*/
 .container-about{
