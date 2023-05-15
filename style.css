@@ -7,15 +7,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'lexend', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* style */
 
-
+/* style header */
 .container-navbar {
-    width: 100%;
+    width: 100vw;
     height: 75px;
-    margin: 0;
+    top:0;
+    left:0;
     background-color: white;
     opacity: 0.8;
     display: flex;
@@ -23,14 +25,17 @@
     align-items: center;
     position: fixed;
     border-bottom: 0.1px solid rgba(161, 160, 160, 0.5);
+    border-radius: 0 0 5px 5px ;
 
 }
 
-.logo span {
+.logo a  {
     margin-left: 70px;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.5rem;
     letter-spacing: 3px;
+    color:#000;
+    text-decoration: none;
 }
 
 .item-list ul {
@@ -41,13 +46,12 @@
     margin-right: 30px;
 }
 
-.item-list ul li {
-    margin-right: 20px;
-}
+
 
 .item-list ul li a {
     color: #000;
     text-decoration: none;
+    margin-right: 15px;
 }
 
 .item-list ul li .btn-contact{
@@ -65,31 +69,42 @@
     color: white;
 }
 
+/* style landing page */
 .container-landing-page {
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
+    background-color: aqua;
     justify-content: space-between;
-    
+
+    z-index: -1;
 }
 
 .content-intro {
     width: 30%;
     left: 100px;
     top: 300px;
-    position: absolute;
+    position: relative;
+}
+
+.content-image {
+    position: relative;
+    top: 200px;
+    right: 50px;
 }
 
 .content-image img {
-    margin: 78px 70px 0 0; 
+    top: 200px;
+    right: 40px; 
     padding: 15px;
     border-radius: 50px;
 }
-
+/* style about*/
 .container-about{
-    width: 80%;
-    height: 1000px;
-    margin: 70px auto 0;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    margin:auto;
     padding-top: 50px;
     display: flex;
 }
@@ -102,12 +117,13 @@
 }
 
 .about-me {
-    width: 500px;
+    width: 60%;
     padding: 50px;
     margin-left:100px;
     letter-spacing: 1px;
 }
 
+/* style skills */
 .container-about .btn-my-cv {
     margin-top: 30px;
     padding: 20px;
@@ -123,9 +139,10 @@
 }
 
 .container-skills {
-    width: 850px;
-    height: 400px;
-    margin: 20px auto 1000px;
+    margin: 20px auto;
     border: 2px solid black;
     border-radius: 60px;
 }
+
+
+
