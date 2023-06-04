@@ -199,9 +199,15 @@
 }
 
 @media screen and (max-width: 576px) {
+  .content-intro {
+    padding: 1em;
+    margin-bottom: 50px;
+  }
+
   .container-navbar {
     position: fixed;
   }
+
   .item-list {
     display: none;
   }
